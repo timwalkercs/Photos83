@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="538.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CopyingController">
+   <children>
+      <AnchorPane prefHeight="560.0" prefWidth="882.0">
+         <children>
+            <ChoiceBox fx:id="AlbumChoiceBox" layoutX="337.0" layoutY="94.0" prefWidth="150.0" />
+            <Label layoutX="254.0" layoutY="96.0" text="To:">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImagePreview" fitHeight="364.0" fitWidth="564.0" layoutX="80.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="Back" layoutX="740.0" layoutY="478.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="113.0" text="Back" />
+            <Text fx:id="CurrentAlbumLabel" layoutX="6.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Name" textAlignment="CENTER" wrappingWidth="870.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="Move" disable="true" layoutX="740.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Move" />
+            <Text layoutX="666.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move To Destination:">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="Copy" disable="true" layoutX="736.0" layoutY="244.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Copy" />
+            <Text layoutX="662.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copy To Destination:">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
